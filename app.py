@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import pickle
-
+import sklearn
 
 # Importing Dataset and Pipe
 
@@ -72,10 +72,8 @@ if st.button("Predict Price"):
 
     ppi = ((X_res**2) + (Y_res**2))**0.5/screen_size
 
-    st.title("Please select a valid screen size!")
     input = np.array([brand, type, ram, gpu, weight, touchscreen, ips_panel, ppi, cpu, os, ssd, hdd])
     input = input.reshape(1, 12)
     price = round(np.exp(pipe.predict(input)[0]), 2)
     price = "{:,}".format(price)
     st.title(f"Predicted price of this configuration is: ₹ {price}")
-
