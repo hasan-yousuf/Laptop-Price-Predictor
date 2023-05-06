@@ -1,0 +1,5 @@
+The "Laptop Price Predictor" is a Streamlit web application that allows users to predict the price of a laptop based on its features. The application uses a machine learning model called "Random Forest Regressor" to make these predictions. The model is trained on a dataset of laptops with various features, such as processor type, RAM size, and storage capacity, as well as their corresponding prices.
+
+To use the app, users can input the laptop's features using a simple and intuitive user interface. Once the features are entered, the model generates a predicted price based on its learned patterns and relationships between laptop features and prices. The user can also see the model's level of confidence in its prediction by viewing the associated prediction interval.
+
+The "Laptop Price Predictor" app provides an easy-to-use and convenient way for users to estimate the price of a laptop based on its features, enabling them to make more informed purchasing decisions. The app leverages the power of machine learning and the simplicity of Streamlit to provide a seamless user experience.
